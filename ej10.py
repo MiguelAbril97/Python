@@ -8,5 +8,4 @@ for i in lista:
     suma+=i
 
 suma = suma/len(lista)
-
-print(str(suma))
+print(suma)

@@ -1,7 +1,11 @@
+#Ejercicio 11 clase estudiante
+
 class persona ():
     def __init__(self,nombre="",edad=0):
         self.nombre=nombre
         self.edad=edad
+
+#Ejercicio 12 clase estudiante
 
 class rectangulo ():
     
@@ -14,12 +18,16 @@ class rectangulo ():
     
     def getPerimetro(self):
         return (2*self.ancho)+(2*self.altura)
+
+#Ejercicio 13 clase estudiante
     
 class estudiante ():
     def __init__(self,nombre="", edad = 0, curso="" ):
         self.nombre=nombre
         self.edad=edad
         self.curso=curso
+
+#Ejercicio 14  clase cuentaBancaria 
 
 class cuentaBancaria():
     def __init__(self, titular="", saldo=0):
@@ -31,6 +39,8 @@ class cuentaBancaria():
     
     def retirar(self, dinero=0):
         self.saldo-=dinero
+        
+#Ejercicio 15 clase coche
 
 class coche():
     def __init__(self, marca="", modelo=""):
@@ -110,7 +120,7 @@ class coche(Vehiculo):
     def __init__(self, marca="", modelo=""):
         super().__init__(marca, modelo)
     
-    def pasarIYV(self):
+    def pasarITV(self):
         print("El coche ha pasado la revisión")
         
 
@@ -159,5 +169,12 @@ class programador(empleado):
     
     def disminuirSalario(self,cambio=0):
         self.salario-=cambio
-        
+
+class limpieza(empleado):
+    def __init__(self, nombre="", salario=0, horario=""):
+        super().__init__(nombre, salario)
+        self.horario=horario
+    
+    def cambiarHorario(self, nuevoHorario):
+        self.horario=nuevoHorario
         

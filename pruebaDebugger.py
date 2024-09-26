@@ -15,7 +15,9 @@ def dividir (a,b):
     return x
 
 for i in range (1,3):
-    print(sumar(i,5))
+    print(i)
+    j = i+9
+    print(sumar(i,j))
     
 for i in range (1,3):
     print(restar(i,5))
